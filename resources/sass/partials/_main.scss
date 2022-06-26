@@ -1,7 +1,7 @@
 main {
   .thumb {
-    height: 300px;
-    // background-image: url("../../../public/images/jumbotron.jpg");
+    height: 200px;
+    background-image: url(../images/jumbotron.jpg);
     background-size: cover;
     background-position: top;
   }
@@ -16,7 +16,7 @@ main {
       font-size: .7rem;
       padding: .5rem 1rem;
       color: white;
-      font-weight: bold;
+      font-weight: 900;
       position: absolute;
       top: -15px;
     }
@@ -46,8 +46,17 @@ main {
 
     .btn-blue {
       text-align: center;
-      padding: 1rem;
-      background-color: red;
+      padding: .5rem 2.5rem;
+      background-color: #0282f9;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      bottom: 1rem;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: .5rem;
+      cursor: pointer;
     }
   }
 }

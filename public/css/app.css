@@ -26,40 +26,33 @@ header {
   display: flex;
   align-items: center;
 }
-
 header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 header nav .logo {
   width: 70px;
 }
-
 header nav .menu {
   display: flex;
 }
-
 header nav .menu li {
   margin: 0 1rem;
   text-transform: uppercase;
   font-size: 0.7rem;
   font-weight: bold;
 }
-
 header nav .menu li a {
   color: inherit;
   text-decoration: inherit;
 }
-
 header nav .search {
   display: flex;
   align-items: center;
   border-bottom: 2px solid #0282f9;
   width: 120px;
 }
-
 header nav .search input {
   border: none;
   padding: 5px;
@@ -68,27 +61,25 @@ header nav .search input {
 }
 
 main .thumb {
-  height: 300px;
+  height: 200px;
+  background-image: url(../images/jumbotron.jpg);
   background-size: cover;
   background-position: top;
 }
-
 main .bg-current-series {
   background-color: #1c1c1c;
   position: relative;
 }
-
 main .bg-current-series .tag-current-series {
   background-color: #0282f9;
   text-transform: uppercase;
   font-size: 0.7rem;
   padding: 0.5rem 1rem;
   color: white;
-  font-weight: bold;
+  font-weight: 900;
   position: absolute;
   top: -15px;
 }
-
 main .bg-current-series .current-series {
   display: flex;
   flex-wrap: wrap;
@@ -96,25 +87,63 @@ main .bg-current-series .current-series {
   padding: 2rem 0;
   color: white;
 }
-
 main .bg-current-series .current-series .card {
   width: 15.6666666667%;
   margin-bottom: 1rem;
   font-size: 0.7rem;
 }
-
 main .bg-current-series .current-series .card .card-img {
   height: 11vw;
   overflow: hidden;
 }
-
 main .bg-current-series .current-series .card p {
   padding: 1rem 0;
 }
-
 main .bg-current-series .btn-blue {
   text-align: center;
-  padding: 1rem;
-  background-color: red;
+  padding: 0.5rem 2.5rem;
+  background-color: #0282f9;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 1rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 0.5rem;
+  cursor: pointer;
 }
 
+footer .footer-top .bg-footer-top {
+  background-image: url(../images/footer-bg.jpg);
+}
+footer .footer-top .row {
+  display: flex;
+}
+footer .footer-top .row .col {
+  padding: 1rem 0;
+}
+footer .footer-top .row .col-links {
+  width: 15%;
+}
+footer .footer-top .row .col-links h3 {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 900;
+  margin: 0.5rem 0;
+  color: white;
+}
+footer .footer-top .row .col-links li {
+  line-height: 10px;
+}
+footer .footer-top .row .col-links li a {
+  color: grey;
+  font-size: 0.5rem;
+  text-decoration: none;
+}
+footer .footer-top .row .col-logo {
+  width: 40%;
+  background-image: url(../images/dc-logo-bg.png);
+  background-size: cover;
+  background-position: right;
+}

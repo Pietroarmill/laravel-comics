@@ -21,4 +21,5 @@
             </section>
             <div class="btn-blue">load more</div>
         </div>
+    </div>
 @endsection

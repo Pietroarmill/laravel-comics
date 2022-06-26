@@ -5,7 +5,7 @@
                 <img src="{{ asset('images/dc-logo.png') }}" alt="">
             </div>
             <ul class="menu">
-                @foreach ($menuArray as $item)
+                @foreach ($menu_array as $item)
                     <li>
                         <a href="">{{ $item }}</a>
                     </li>
