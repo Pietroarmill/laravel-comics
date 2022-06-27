@@ -117,33 +117,75 @@ main .bg-current-series .btn-blue {
 footer .footer-top .bg-footer-top {
   background-image: url(../images/footer-bg.jpg);
 }
-footer .footer-top .row {
+footer .footer-top .links-section {
   display: flex;
 }
-footer .footer-top .row .col {
+footer .footer-top .links-section .col-left {
+  display: flex;
+  width: 60%;
   padding: 1rem 0;
 }
-footer .footer-top .row .col-links {
-  width: 15%;
+footer .footer-top .links-section .col-left .col-links {
+  width: 20%;
 }
-footer .footer-top .row .col-links h3 {
+footer .footer-top .links-section .col-left .col-links h3 {
   text-transform: uppercase;
-  font-size: 0.7rem;
-  font-weight: 900;
-  margin: 0.5rem 0;
   color: white;
+  font-size: 0.6rem;
+  margin: 0.5rem 0;
 }
-footer .footer-top .row .col-links li {
+footer .footer-top .links-section .col-left .col-links li {
   line-height: 10px;
 }
-footer .footer-top .row .col-links li a {
+footer .footer-top .links-section .col-left .col-links li a {
+  text-decoration: none;
   color: grey;
   font-size: 0.5rem;
-  text-decoration: none;
 }
-footer .footer-top .row .col-logo {
+footer .footer-top .links-section .col-right {
   width: 40%;
   background-image: url(../images/dc-logo-bg.png);
   background-size: cover;
-  background-position: right;
+  background-position: center;
+}
+footer .footer-top .cookies-set p {
+  font-size: 0.5rem;
+  color: grey;
+}
+footer .footer-top .cookies-set p span {
+  color: rgb(29, 119, 255);
+}
+footer .footer-bottom {
+  background-color: #303030;
+}
+footer .footer-bottom .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1rem 0;
+}
+footer .footer-bottom .row .col-left .btn-sign {
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  color: white;
+  padding: 0.5rem;
+  border: 2px solid #0282f9;
+  cursor: pointer;
+}
+footer .footer-bottom .row .col-right {
+  display: flex;
+}
+footer .footer-bottom .row .col-right span {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 900;
+  color: #0282f9;
+  margin-right: 5px;
+}
+footer .footer-bottom .row .col-right ul {
+  display: flex;
+}
+footer .footer-bottom .row .col-right ul li {
+  width: 20px;
+  margin: 0 3px;
 }
