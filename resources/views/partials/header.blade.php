@@ -5,9 +5,9 @@
                 <img src="{{ asset('images/dc-logo.png') }}" alt="">
             </div>
             <ul class="menu">
-                @foreach ($menu_array as $item)
+                @foreach ($menu as $item)
                     <li>
-                        <a href="">{{ $item }}</a>
+                        <a href="{{ route($item) }}">{{ $item }}</a>
                     </li>
                 @endforeach
             </ul>

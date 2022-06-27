@@ -1,6 +1,6 @@
 main {
   .thumb {
-    height: 200px;
+    height: 350px;
     background-image: url(../images/jumbotron.jpg);
     background-size: cover;
     background-position: top;
@@ -27,17 +27,17 @@ main {
       justify-content: space-between;
       padding: 2rem 0;
       color: white;
-  
+
       .card {
         width: calc(100% / 6 - 1%);
         margin-bottom: 1rem;
         font-size: .7rem;
-     
+
         .card-img {
           height: 11vw;
           overflow: hidden;
         }
-  
+
         p {
           padding: 1rem 0;
         }
@@ -58,5 +58,93 @@ main {
       font-size: .5rem;
       cursor: pointer;
     }
+  }
+
+  // Single-card
+  .row-blue {
+    height: 50px;
+    background-color: #0282f9;
+    position: relative;
+
+    .serie-card {
+      height: 15vw;
+      width: 10vw;
+      background-color: red;
+      position: absolute;
+      bottom: 10px;
+    }
+  }
+
+  .serie {
+    padding: 2rem 0;
+    display: flex;
+
+    .col-left {
+      width: 70%;
+    }
+
+    .col_right {
+      width: 30%;
+    }
+  }
+
+  .bg-specifications {
+    background-color: #f3f3f3;
+
+    .specifications {
+      display: flex;
+
+      .col-left {
+        width: 48%;
+      }
+
+      .col-right {
+        width: 48%;
+        margin-left: 4%;
+      }
+
+      .specifications-item {
+        display: flex;
+        padding: .6rem 0;
+        border-bottom: 1px solid lightgrey;
+
+        span {
+          display: inline-block;
+          width: 30%;
+        }
+
+        p {
+          width: 70%;
+        }
+      }
+
+      h4 {
+        padding: 1.4rem 0;
+        border-bottom: 1px solid lightgrey;
+      }
+    }
+
+
+
+    .bg-shop-tag {
+      border-top: 1px solid lightgrey;
+      margin-top: 6rem;
+
+      .shop-tag {
+        display: flex;
+
+        .shop-tag-item {
+          width: calc(100% / 5);
+          display: flex;
+          justify-content: space-between;
+          border-left: 1px solid lightgrey; 
+          border-right: 1px solid lightgrey; 
+          padding: .7rem;
+        }
+      }
+    }
+
+
+
   }
 }

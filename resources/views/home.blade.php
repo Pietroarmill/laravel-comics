@@ -5,7 +5,7 @@
 @endsection
 
 @section('main_content')
-    <div class="thumb">ciao</div>
+    <div class="thumb"></div>
     <div class="bg-current-series">
         <div class="container">
             <span class="tag-current-series">current series</span>

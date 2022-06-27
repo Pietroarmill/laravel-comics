@@ -61,7 +61,7 @@ header nav .search input {
 }
 
 main .thumb {
-  height: 200px;
+  height: 350px;
   background-image: url(../images/jumbotron.jpg);
   background-size: cover;
   background-position: top;
@@ -113,6 +113,72 @@ main .bg-current-series .btn-blue {
   font-size: 0.5rem;
   cursor: pointer;
 }
+main .row-blue {
+  height: 50px;
+  background-color: #0282f9;
+  position: relative;
+}
+main .row-blue .serie-card {
+  height: 15vw;
+  width: 10vw;
+  background-color: red;
+  position: absolute;
+  bottom: 10px;
+}
+main .serie {
+  padding: 2rem 0;
+  display: flex;
+}
+main .serie .col-left {
+  width: 70%;
+}
+main .serie .col_right {
+  width: 30%;
+}
+main .bg-specifications {
+  background-color: #f3f3f3;
+}
+main .bg-specifications .specifications {
+  display: flex;
+}
+main .bg-specifications .specifications .col-left {
+  width: 48%;
+}
+main .bg-specifications .specifications .col-right {
+  width: 48%;
+  margin-left: 4%;
+}
+main .bg-specifications .specifications .specifications-item {
+  display: flex;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid lightgrey;
+}
+main .bg-specifications .specifications .specifications-item span {
+  display: inline-block;
+  width: 30%;
+}
+main .bg-specifications .specifications .specifications-item p {
+  width: 70%;
+}
+main .bg-specifications .specifications h4 {
+  padding: 1.4rem 0;
+  border-bottom: 1px solid lightgrey;
+}
+main .bg-specifications .bg-shop-tag {
+  border-top: 1px solid lightgrey;
+  margin-top: 6rem;
+}
+main .bg-specifications .bg-shop-tag .shop-tag {
+  display: flex;
+}
+main .bg-specifications .bg-shop-tag .shop-tag .shop-tag-item {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+  padding: 0.7rem;
+}
 
 footer .footer-top .bg-footer-top {
   background-image: url(../images/footer-bg.jpg);
@@ -121,32 +187,39 @@ footer .footer-top .links-section {
   display: flex;
 }
 footer .footer-top .links-section .col-left {
+  width: 50%;
+}
+footer .footer-top .links-section .col-left .col-left-top {
   display: flex;
-  width: 60%;
+  width: 100%;
   padding: 1rem 0;
 }
-footer .footer-top .links-section .col-left .col-links {
+footer .footer-top .links-section .col-left .col-left-top .col-links {
   width: 20%;
 }
-footer .footer-top .links-section .col-left .col-links h3 {
+footer .footer-top .links-section .col-left .col-left-top .col-links h3 {
   text-transform: uppercase;
   color: white;
   font-size: 0.6rem;
   margin: 0.5rem 0;
 }
-footer .footer-top .links-section .col-left .col-links li {
+footer .footer-top .links-section .col-left .col-left-top .col-links li {
   line-height: 10px;
 }
-footer .footer-top .links-section .col-left .col-links li a {
+footer .footer-top .links-section .col-left .col-left-top .col-links li a {
   text-decoration: none;
   color: grey;
   font-size: 0.5rem;
 }
 footer .footer-top .links-section .col-right {
-  width: 40%;
+  width: 50%;
   background-image: url(../images/dc-logo-bg.png);
   background-size: cover;
   background-position: center;
+}
+footer .footer-top .cookies-set {
+  line-height: 5px;
+  padding-bottom: 1rem;
 }
 footer .footer-top .cookies-set p {
   font-size: 0.5rem;
@@ -154,6 +227,11 @@ footer .footer-top .cookies-set p {
 }
 footer .footer-top .cookies-set p span {
   color: rgb(29, 119, 255);
+}
+footer .footer-top .cookies-set a {
+  color: rgb(29, 119, 255);
+  font-size: 0.5rem;
+  text-decoration: none;
 }
 footer .footer-bottom {
   background-color: #303030;
