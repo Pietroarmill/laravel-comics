@@ -16,6 +16,10 @@ ul {
   list-style: none;
 }
 
+.upper-c {
+  text-transform: uppercase;
+}
+
 .container {
   width: 70%;
   margin: 0 auto;
@@ -123,27 +127,96 @@ main .row-blue {
   position: relative;
 }
 main .row-blue .serie-card {
-  height: 15vw;
-  width: 10vw;
-  background-color: red;
   position: absolute;
   bottom: 10px;
 }
+main .row-blue .serie-card .serie-card-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+main .row-blue .serie-card .serie-card-box .tag {
+  background-color: #00a9d9;
+  color: white;
+  padding: 3px;
+  font-size: 0.8rem;
+  position: absolute;
+  left: 0;
+}
+main .row-blue .serie-card .serie-card-box .tag-top {
+  top: 0;
+}
+main .row-blue .serie-card .serie-card-box .tag-bottom {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
 main .serie {
-  padding: 2rem 0;
+  padding: 4rem 0;
   display: flex;
 }
-main .serie .col-left {
-  width: 70%;
+main .serie .price {
+  display: flex;
+  background-color: #55ba59;
+  border-bottom: 2px solid #357739;
+  margin-bottom: 1rem;
+  font-weight: bold;
 }
-main .serie .col_right {
+main .serie .price .price-col {
+  padding: 0.9rem 1.5rem;
+}
+main .serie .price .price-left {
+  width: 70%;
+  border-right: 2px solid #357739;
+  color: #acf98e;
+  display: flex;
+  justify-content: space-between;
+}
+main .serie .price .price-left span {
+  color: white;
+}
+main .serie .price .price-right {
   width: 30%;
+  color: white;
+  cursor: pointer;
+}
+main .serie .price .price-right span {
+  vertical-align: middle;
+}
+main .serie h3 {
+  color: #003f5e;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+main .serie p {
+  color: rgb(121, 121, 121);
+  line-height: 1.5rem;
+  font-weight: bold;
+}
+main .serie .col-left {
+  width: 68%;
+}
+main .serie .col-right {
+  width: 30%;
+  margin-left: 2%;
+  text-align: end;
+}
+main .serie .col-right p {
+  text-align: end;
+  font-size: 0.7rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: rgb(85, 85, 85);
 }
 main .bg-specifications {
   background-color: #f3f3f3;
 }
 main .bg-specifications .specifications {
   display: flex;
+}
+main .bg-specifications .specifications h4 {
+  color: #003f5e;
 }
 main .bg-specifications .specifications .col-left {
   width: 48%;
@@ -160,12 +233,16 @@ main .bg-specifications .specifications .specifications-item {
 main .bg-specifications .specifications .specifications-item h5 {
   display: inline-block;
   width: 30%;
+  color: #003f5e;
 }
 main .bg-specifications .specifications .specifications-item p {
   width: 70%;
 }
 main .bg-specifications .specifications .specifications-item p span {
   color: #00a9d9;
+}
+main .bg-specifications .specifications .specifications-item p span span {
+  color: black;
 }
 main .bg-specifications .specifications h4 {
   padding: 1.4rem 0;
@@ -179,12 +256,25 @@ main .bg-specifications .bg-shop-tag .shop-tag {
   display: flex;
 }
 main .bg-specifications .bg-shop-tag .shop-tag .shop-tag-item {
-  width: 20%;
+  width: 25%;
   display: flex;
   justify-content: space-between;
   border-left: 1px solid lightgrey;
   border-right: 1px solid lightgrey;
   padding: 0.7rem;
+}
+main .bg-specifications .bg-shop-tag .shop-tag .shop-tag-item h5 {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #9e9e9e;
+}
+main .bg-specifications .bg-shop-tag .shop-tag .shop-tag-item .img {
+  width: 10%;
+}
+main .bg-specifications .bg-shop-tag .shop-tag .shop-tag-item .img img {
+  filter: contrast(0.3);
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 footer .footer-top .bg-footer-top {
