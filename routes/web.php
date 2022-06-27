@@ -190,11 +190,14 @@ Route::get('/shops', function() use($menu, $comics_array, $dc_comics_links, $sho
     return view('shops', $data);
 })->name('shops');
 
-Route::get('/single-serie', function () use($menu, $comics_array, $dc_comics_links, $shop_links, $dc_links, $sites_links ) {
+Route::get('/series/{id}', function ($id) use($menu, $dc_comics_links, $shop_links, $dc_links, $sites_links ) {
+
+    $series = collect(config('comics'));
+    $current_serie = $series->where('id', $id)->first();
 
     $data = [
         'menu' => $menu,
-        'comics_array' => $comics_array,
+        'serie' => $current_serie,
         'dc_comics_links' => $dc_comics_links,
         'shop_links' => $shop_links,
         'dc_links' => $dc_links,

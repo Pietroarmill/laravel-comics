@@ -40,6 +40,10 @@ main {
 
         p {
           padding: 1rem 0;
+          a {
+            color: white;
+            text-decoration: none;
+          }
         }
       }
     }
@@ -108,13 +112,18 @@ main {
         padding: .6rem 0;
         border-bottom: 1px solid lightgrey;
 
-        span {
+        h5 {
           display: inline-block;
           width: 30%;
         }
 
         p {
           width: 70%;
+
+          span {
+            color: #00a9d9;
+
+          }
         }
       }
 

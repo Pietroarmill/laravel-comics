@@ -6,7 +6,7 @@
     <div class="row-blue">
         <div class="container">
             <div class="serie-card">
-                card
+                <img src="{{ $serie['thumb'] }}" alt="">
             </div>
         </div>
     </div>
@@ -14,13 +14,11 @@
     <div class="container">
         <section class="serie">
             <div class="col-left">
-                <h3>Title</h3>
+                <h3>{{ $serie['title'] }}</h3>
                 <div class="price">
-                    price
+                    
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptas ipsam esse et provident. Quasi quae
-                    voluptate id explicabo ullam repellendus, obcaecati voluptates necessitatibus deleniti modi!
-                    Voluptatibus maiores ea nostrum.</p>
+                <p>{{ $serie['description'] }}</p>
             </div>
 
             <div class="col-right">
@@ -39,33 +37,39 @@
             <div class="col-left">
                 <h4>Talent</h4>
                 <div class="specifications-item">
-                    <span>Art by:</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro maxime necessitatibus iure
-                        explicabo ab vitae quaerat id quos doloremque, odio enim voluptatum dolore fugiat omnis! Facilis
-                        </p>
+                    <h5>Art by:</h5>
+                    <p>
+                      @foreach ($serie['artists'] as $item)
+                        <span>{{ $item }},</span>
+                      @endforeach 
+                    </p>
                 </div>
                 <div class="specifications-item">
-                    <span>Written by:</span>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur ipsum velit quibusdam dolorem
-                        soluta quod, neque nesciunt enim dolores fugit, distinctio veritatis incidunt? Non ipsum eaque
-                        </p>
+                    <h5>Written by:</h5>
+                    <p>
+                      @foreach ($serie['writers'] as $item)
+                        <span>{{ $item }},</span>
+                      @endforeach 
+                    </p>
                 </div>
             </div>
 
             <div class="col-right">
                 <h4>Spec</h4>
                 <div class="specifications-item">
-                    <span>Series:</span>
-                    <p>Non ipsum eaque</p>
+                    <h5>Series:</h5>
+                    <p>
+                      <span>{{ $serie['series'] }}</span>
+                    </p>
                 </div>
                 <div class="specifications-item">
-                    <span>U.S. Price:</span>
-                    <p>Non ipsum eaque</p>
+                    <h5>U.S. Price:</h5>
+                    <p>{{ $serie['price'] }}</p>
                 </div>
                 <div class="specifications-item">
-                  <span>On Sale Date:</span>
-                  <p>Non ipsum eaque</p>
-              </div>
+                  <h5>On Sale Date:</h5>
+                  <p>{{ $serie['sale_date'] }}</p>
+                </div>
             </div>
 
         </section>

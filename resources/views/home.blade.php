@@ -15,7 +15,11 @@
                         <div class="card-img">
                             <img src="{{ $item['thumb'] }}" alt="">
                         </div>
-                        <p>{{ $item['title'] }}</p>
+                        <p>
+                            <a href="{{ route('single-serie', ['id' => $item['id']]) }}">
+                                {{ $item['title'] }}
+                            </a>
+                        </p>
                     </div>
                 @endforeach
             </section>

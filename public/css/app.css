@@ -99,6 +99,10 @@ main .bg-current-series .current-series .card .card-img {
 main .bg-current-series .current-series .card p {
   padding: 1rem 0;
 }
+main .bg-current-series .current-series .card p a {
+  color: white;
+  text-decoration: none;
+}
 main .bg-current-series .btn-blue {
   text-align: center;
   padding: 0.5rem 2.5rem;
@@ -153,12 +157,15 @@ main .bg-specifications .specifications .specifications-item {
   padding: 0.6rem 0;
   border-bottom: 1px solid lightgrey;
 }
-main .bg-specifications .specifications .specifications-item span {
+main .bg-specifications .specifications .specifications-item h5 {
   display: inline-block;
   width: 30%;
 }
 main .bg-specifications .specifications .specifications-item p {
   width: 70%;
+}
+main .bg-specifications .specifications .specifications-item p span {
+  color: #00a9d9;
 }
 main .bg-specifications .specifications h4 {
   padding: 1.4rem 0;
